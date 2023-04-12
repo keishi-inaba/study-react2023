@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import { HeaderLogo } from '../components/HeaderLogo';
@@ -19,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
+        <div className={`${styles.description} ${styles.title}`}>
           <Headline title="Index Page" page="index" />
 
           <HeaderLogo />

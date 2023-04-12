@@ -34,6 +34,17 @@
   border-radius: var(--border-radius);
 }
 
+.title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.title h1 {
+  margin-right: 50px;
+}
+
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
