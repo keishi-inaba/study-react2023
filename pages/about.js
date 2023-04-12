@@ -1,9 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import { HeaderLogo } from '@/components/HeaderLogo'
-import { Links } from '@/components/Links'
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from '@/styles/Home.module.css';
+import { HeaderLogo } from '@/components/HeaderLogo';
+import { Links } from '@/components/Links';
+import { Images } from '@/components/images';
+import { Headline } from '@/components/Headline';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,25 +20,12 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <h1>About Pages</h1>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/about.js</code>
-          </p>
+          <Headline title="About Page" page="about" />
 
           <HeaderLogo />
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
+        <Images />
 
         <Links />
       </main>
