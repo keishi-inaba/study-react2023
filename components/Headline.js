@@ -9,7 +9,6 @@ export function Headline(props) {
         Get started by editing&nbsp;
         {props.children}
       </p>
-
     </div>
   )
 }

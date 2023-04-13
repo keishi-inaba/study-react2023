@@ -7,6 +7,10 @@
 }
 
 .title h1 {
-  margin-right: 50px;
+  margin: 0 50px;
+}
+
+.title p {
+  margin: 0 50px;
 }
 
