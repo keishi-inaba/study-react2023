@@ -8,7 +8,7 @@ import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home(props) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -18,13 +18,10 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <Headline
-            page="about"
-            code={<code className={styles.code}>pages/{props.page}</code>}
-            // onClick={() => alert('click!!')}
-          />
-
+        <div className={`${styles.description} ${styles.title}`}>
+          <Headline page="about">
+            <code className={styles.code}>pages/about.js</code>
+          </Headline>
           <HeaderLogo />
         </div>
 

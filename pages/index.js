@@ -9,7 +9,7 @@ import Head from "next/head";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home(props) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -20,11 +20,9 @@ export default function Home(props) {
       </Head>
       <main className={styles.main}>
         <div className={`${styles.description} ${styles.title}`}>
-          <Headline
-            page="index"
-            // onClick={() => alert('click!!')}
-            code={<code className={styles.code}>pages/{props.page}</code>}
-            />
+          <Headline page="index">
+            <code className={styles.code}>pages/index.js</code>
+          </Headline>
 
           <HeaderLogo />
         </div>
