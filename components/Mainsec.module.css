@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.title h1 {
+  margin-right: 50px;
+}
+
+.code {
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+

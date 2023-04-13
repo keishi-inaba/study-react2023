@@ -1,0 +1,12 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.title h1 {
+  margin-right: 50px;
+}
+

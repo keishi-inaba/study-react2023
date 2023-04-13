@@ -1,12 +1,12 @@
-import styles from '@/styles/Home.module.css'
+import classes from './Imgs.module.css'
 import Image from 'next/image'
 
 
 export function Imgs() {
   return (
-    <div className={styles.center}>
+    <div className={classes.center}>
       <Image
-        className={styles.logo}
+        className={classes.logo}
         src="/next.svg"
         alt="Next.js Logo"
         width={180}
