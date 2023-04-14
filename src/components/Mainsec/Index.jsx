@@ -1,9 +1,9 @@
 import { Inter } from 'next/font/google';
-import classes from './Mainsec.module.css';
-import { HeaderLogo } from './HeaderLogo';
-import { Links } from '@/components/Links';
-import { Imgs } from '@/components/Imgs';
-import { Headline } from '@/components/Headline';
+import classes from 'src/components/Mainsec/Mainsec.module.css';
+import { HeaderLogo } from 'src/components/HeaderLogo/Index';
+import { Links } from '@/src/components/Links/Index';
+import { Imgs } from '@/src/components/Imgs/Index';
+import { Headline } from '@/src/components/Headline/Index';
 
 
 const inter = Inter({ subsets: ['latin'] })

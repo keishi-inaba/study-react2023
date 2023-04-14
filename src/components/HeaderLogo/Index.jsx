@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import classes from './HeaderLogo.module.css';
+import classes from 'src/components/HeaderLogo/HeaderLogo.module.css';
 
 export function HeaderLogo() {
   return (

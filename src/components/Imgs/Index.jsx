@@ -1,4 +1,4 @@
-import classes from './Imgs.module.css'
+import classes from 'src/components/Imgs/Imgs.module.css'
 import Image from 'next/image'
 
 
