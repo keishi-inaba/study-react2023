@@ -2,9 +2,23 @@ import Head from "next/head";
 import { Mainsec } from '@/src/components/Mainsec/Index';
 import { Header } from "@/src/components/Header/Index";
 import styles from "src/styles/Home.module.css";
+import { useCallback } from "react";
 
+
+// const handleClick = (e) => {
+//   console.log(e.target.href);
+//   e.preventDefault();
+// };
 
 export default function Home() {
+  const foo = 1;
+
+  const handleClick = useCallback((e) => {
+    console.log(e.target.href);
+    e.prevemtDefault();
+    alert(foo);
+  }, []);
+
   return (
     <div className={styles.main}>
       <Head>
@@ -13,6 +27,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
+      <a
+        href="/about"
+        onClick={handleClick}
+      >
+        btn
+      </a>
       <Mainsec page="index"/>
     </div>
   )
