@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { Mainsec } from '@/src/components/Mainsec/Index';
-import { Header } from "@/src/components/Header/Index";
+import { Mainsec } from 'src/components/Mainsec/Index';
+import { Header } from "src/components/Header/Index";
 import styles from "src/styles/Home.module.css";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 
 
 // const handleClick = (e) => {
@@ -17,6 +17,14 @@ export default function Home() {
     console.log(e.target.href);
     e.prevemtDefault();
     alert(foo);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "lightblue";
+
+    return () => {
+      document.body.style.backgroundColor = "";
+    }
   }, []);
 
   return (

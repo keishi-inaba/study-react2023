@@ -1,5 +1,5 @@
-import { Header } from "@/src/components/Header/Index";
-import { Mainsec } from "@/src/components/Mainsec/Index";
+import { Header } from "src/components/Header/Index";
+import { Mainsec } from "src/components/Mainsec/Index";
 import Head from "next/head";
 import styles from "src/styles/Home.module.css";
 
