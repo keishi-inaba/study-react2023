@@ -7,12 +7,26 @@ import { useCallback, useEffect, useState } from "react";
 
 export default function Home() {
   const [count, setCount] = useState(1);
+  const [text, setText] = useState("");
+  const [isShow, setIsShow] =useState(true);
 
   const handleClick = useCallback(() => {
     if(count < 10) {
       setCount((count) => count + 1);
     }
   }, [count]);
+
+  const handleDisplay = useCallback(() => {
+    setIsShow((isShow) => !isShow);
+  }, []);
+
+  const handleChange = useCallback((e) => {
+    if(e.target.value.length > 5) {
+      alert("ok");
+      return;
+    }
+    setText(e.target.value.trim());
+  }, []);
 
   useEffect(() => {
     // console.log(`マウンド時： ${count}`);
@@ -32,10 +46,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
-      <h1>{ count }</h1>
-      <button href="/about" onClick={handleClick}>
-        btn
+      { isShow ? <h1>{ count }</h1> : null }
+      <button onClick={handleClick}>btn</button>
+      <button
+        onClick={handleDisplay}
+      >
+        { isShow ? "非表示" : "表示" }
       </button>
+      <input
+        type="text"
+        value={text}
+        onChange={handleChange}
+      />
       <Mainsec page="index"/>
     </div>
   )
