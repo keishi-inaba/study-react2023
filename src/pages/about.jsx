@@ -2,17 +2,18 @@ import Head from "next/head";
 import styles from "src/styles/Home.module.css";
 import { Mainsec } from "src/components/Mainsec/Index";
 import { Header } from "src/components/Header/Index";
-import { useCounter } from "@/src/hooks/useCounter";
-import { useInputArray } from "@/src/hooks/useInputArray";
-import { useBgColor } from "@/src/hooks/useBgColor";
 
 
-
-export default function About() {
-  const { count, isShow, handleClick, handleDisplay } = useCounter();
-  const { text, array, handleChange, handleAdd } = useInputArray();
-  useBgColor();
-
+export default function About({
+  count,
+  isShow,
+  handleClick,
+  handleDisplay,
+  text,
+  array,
+  handleChange,
+  handleAdd
+}) {
   return (
     <div className={styles.main}>
       <Head>
