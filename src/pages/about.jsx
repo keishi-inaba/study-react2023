@@ -12,7 +12,7 @@ export default function About({
   text,
   array,
   handleChange,
-  handleAdd
+  handleAdd,
 }) {
   return (
     <div className={styles.main}>
@@ -38,13 +38,13 @@ export default function About({
         onChange={handleChange}
       />
       <button onClick={handleAdd}>追加</button>
-      <ul>
+      {/* <ul>
         {array.map(item => {
           return (
             <li key={item}>{item}</li>
           )
         })}
-      </ul>
+      </ul> */}
 
       <Mainsec page="about"/>
     </div>

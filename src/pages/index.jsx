@@ -40,13 +40,13 @@ export default function Home(props) {
         onChange={handleChange}
       />
       <button onClick={handleAdd}>追加</button>
-      <ul>
+      {/* <ul>
         {array.map(item => {
           return (
             <li key={item}>{item}</li>
           )
         })}
-      </ul>
+      </ul> */}
 
       <Mainsec page="index"/>
     </div>
