@@ -29,7 +29,7 @@ const ITEMS = [
   },
 ]
 
-export function Mainsec(props) {
+export const Mainsec = (props) => {
   const [items, setItems] = useState(ITEMS);
   const handleReduce = useCallback(() => {
     setItems(prevItems => {

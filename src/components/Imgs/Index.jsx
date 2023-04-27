@@ -2,7 +2,7 @@ import classes from 'src/components/Imgs/Imgs.module.css'
 import Image from 'next/image'
 
 
-export function Imgs() {
+export const Imgs = () => {
   return (
     <div className={classes.center}>
       <Image

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import classes from 'src/components/HeaderLogo/HeaderLogo.module.css';
 
-export function HeaderLogo() {
+export const HeaderLogo = () => {
   return (
     <>
       <div>
