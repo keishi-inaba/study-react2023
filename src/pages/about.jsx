@@ -5,7 +5,7 @@ import { Header } from "src/components/Header/Index";
 
 
 export default function About({
-  count,
+  doubleCount,
   isShow,
   handleClick,
   handleDisplay,
@@ -24,13 +24,10 @@ export default function About({
 
       <Header />
 
-      { isShow ? <h1>{ count }</h1> : null }
       <button onClick={handleClick}>btn</button>
-      <button
-        onClick={handleDisplay}
-      >
-        { isShow ? "非表示" : "表示" }
-      </button>
+      <button onClick={handleDisplay}>{ isShow ? "非表示" : "表示" }</button>
+      { isShow ? <h2>{ doubleCount }</h2> : null}
+      <hr />
 
       <input
         type="text"
@@ -38,13 +35,11 @@ export default function About({
         onChange={handleChange}
       />
       <button onClick={handleAdd}>追加</button>
-      {/* <ul>
-        {array.map(item => {
-          return (
-            <li key={item}>{item}</li>
-          )
+      <ol>
+        {array?.map((item) => {
+          return <li key={item}>{item}</li>;
         })}
-      </ul> */}
+      </ol>
 
       <Mainsec page="about"/>
     </div>
