@@ -33,9 +33,9 @@ export function Mainsec(props) {
   const [items, setItems] = useState(ITEMS);
   const handleReduce = useCallback(() => {
     setItems(prevItems => {
-      return prevItems.slice(0, prevItems.length - 1);
+      return prevItems.slice(0, prevItems.length -1);
     });
-  });
+  }, []);
 
   return (
     <>
@@ -44,11 +44,9 @@ export function Mainsec(props) {
           <Headline page={props.page} handleReduce={handleReduce}>
             <code className={classes.code}>{items.length}</code>
           </Headline>
-
           <HeaderLogo />
         </div>
         <Imgs />
-
         <Links items={items} />
       </main>
     </>

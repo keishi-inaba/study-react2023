@@ -3,8 +3,7 @@ import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export function Links({ items }) {
-
+export function Links({ items, handleReduce }) {
   return (
     <div className={classes.grid}>
       {items.map((item) => {
